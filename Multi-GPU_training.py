@@ -6,7 +6,7 @@ import numpy as np
 import os
 from tqdm import tqdm
 import mlflow
-
+from nn_t2v import *
 
 os.chdir('/')
 
@@ -44,8 +44,6 @@ def prepare(rank, world_size, data, batch_size=8, pin_memory=True, num_workers=0
     sampler = DistributedSampler(data, num_replicas=world_size, rank=rank, shuffle=False, drop_last=False)  
     dataloader = DataLoader(data, batch_size=batch_size, pin_memory=pin_memory, num_workers=num_workers, drop_last=False, shuffle=False, sampler=sampler)
     return dataloader
-
-from nn_t2v import *
 
 def transform_data(data_in):
     # applies some random flips and rotations to the data
