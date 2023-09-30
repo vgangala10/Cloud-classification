@@ -1,4 +1,4 @@
-# Cloud-classififcation
+# Cloud-classification
 
 Multi-GPU_training.py --> code for training 20000 triplets (2% of the data) with 2 or more GPUs using pytorch DDP <br>
 Single-GPU_training.py --> code for training 20000 triplets with one GPU<br>
