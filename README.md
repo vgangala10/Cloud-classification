@@ -2,7 +2,7 @@
 
 Multi-GPU_training.py --> code for training 20000 triplets with 2 or more GPUs using pytorch DDP <br>
 Single-GPU_training.py --> code for training 20000 triplets with one GPU<br>
-nn_t2v.py --> ResNet-18 model code and loss metric<br>
+nn_t2v.py --> ResNet-18 model and loss metric code<br>
 
 A triplet consists of three 3x128x128 images. 
 <ol>
